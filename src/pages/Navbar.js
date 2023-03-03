@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import { FaMoon } from "react-icons/fa";
+import React from "react";
+// import { FaMoon } from "react-icons/fa";
 import Search from "../components/Search";
-import { useCountry } from "../utilities/useCountry";
 
 const Navbar = () => {
-  const { toggleModeHandler, darkMode } = useCountry();
-  // console.log(darkMode);
   return (
     <>
       {/* <div className="flex justify-between  py-4 bg-gradient-to-r from-pink-500 via-purple-500  to-indigo-500  p-6 ">

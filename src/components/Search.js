@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useCountry } from "../utilities/useCountry";
 import CountryDetails from "./CountryDetails";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +21,7 @@ const Search = (props) => {
     selectOption === "all"
       ? navigate("/")
       : navigate(`/region/${selectOption}`);
-  }, [selectOption]);
+  }, [selectOption, navigate]);
 
   const handleChangeInput = (e) => {
     e.preventDefault();

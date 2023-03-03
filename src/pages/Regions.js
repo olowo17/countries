@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import CountryInfo from "./CountryInfo";
 
 const Regions = () => {
   const [regionData, setRegionData] = useState();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const { regionname } = useParams();
   useEffect(() => {
     fetch(`https://restcountries.com/v3.1/region/${regionname}`)

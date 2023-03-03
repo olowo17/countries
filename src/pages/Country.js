@@ -14,10 +14,10 @@ const Country = () => {
   }, [countryname]);
 
   console.log(countryData);
-  countryData?.map((element) => {
-    console.log(element);
-    // console.log(element.languages);
-  });
+  // countryData?.map((element) => {
+  //   console.log(element);
+  // console.log(element.languages);
+  // });
 
   return (
     <div className="text-red-700 mt-[100px] ml-[100px]">
